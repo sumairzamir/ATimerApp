@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		885208AD2548CE20005FFEA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885208AC2548CE20005FFEA0 /* AppDelegate.swift */; };
 		885208AF2548CE20005FFEA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885208AE2548CE20005FFEA0 /* SceneDelegate.swift */; };
-		885208B12548CE20005FFEA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885208B02548CE20005FFEA0 /* ViewController.swift */; };
-		885208B42548CE20005FFEA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885208B22548CE20005FFEA0 /* Main.storyboard */; };
+		885208B12548CE20005FFEA0 /* SelectTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885208B02548CE20005FFEA0 /* SelectTimerViewController.swift */; };
 		885208B62548CE22005FFEA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885208B52548CE22005FFEA0 /* Assets.xcassets */; };
 		885208B92548CE22005FFEA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885208B72548CE22005FFEA0 /* LaunchScreen.storyboard */; };
+		88FFCD63254A192F00F96586 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFCD62254A192F00F96586 /* TimerViewController.swift */; };
+		88FFCD6C254A197800F96586 /* SelectTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFCD6B254A197800F96586 /* SelectTimerView.swift */; };
+		88FFCD71254A198100F96586 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFCD70254A198100F96586 /* TimerView.swift */; };
+		88FFCD74254A1A9300F96586 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFCD73254A1A9300F96586 /* PropertyWrappers.swift */; };
+		88FFCD77254A1B0200F96586 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FFCD76254A1B0200F96586 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		885208A92548CE20005FFEA0 /* ATimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885208AC2548CE20005FFEA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		885208AE2548CE20005FFEA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		885208B02548CE20005FFEA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		885208B32548CE20005FFEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		885208B02548CE20005FFEA0 /* SelectTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimerViewController.swift; sourceTree = "<group>"; };
 		885208B52548CE22005FFEA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		885208B82548CE22005FFEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		885208BA2548CE22005FFEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88FFCD62254A192F00F96586 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		88FFCD6B254A197800F96586 /* SelectTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimerView.swift; sourceTree = "<group>"; };
+		88FFCD70254A198100F96586 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		88FFCD73254A1A9300F96586 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
+		88FFCD76254A1B0200F96586 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,57 @@
 			children = (
 				885208AC2548CE20005FFEA0 /* AppDelegate.swift */,
 				885208AE2548CE20005FFEA0 /* SceneDelegate.swift */,
-				885208B02548CE20005FFEA0 /* ViewController.swift */,
-				885208B22548CE20005FFEA0 /* Main.storyboard */,
+				88FFCD69254A195100F96586 /* Model */,
+				88FFCD66254A193C00F96586 /* View */,
+				88FFCD67254A193E00F96586 /* ViewModel */,
 				885208B52548CE22005FFEA0 /* Assets.xcassets */,
+				88FFCD68254A194200F96586 /* New Group2 */,
 				885208B72548CE22005FFEA0 /* LaunchScreen.storyboard */,
 				885208BA2548CE22005FFEA0 /* Info.plist */,
 			);
 			path = ATimerApp;
+			sourceTree = "<group>";
+		};
+		88FFCD66254A193C00F96586 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88FFCD6B254A197800F96586 /* SelectTimerView.swift */,
+				88FFCD70254A198100F96586 /* TimerView.swift */,
+				88FFCD73254A1A9300F96586 /* PropertyWrappers.swift */,
+				88FFCD76254A1B0200F96586 /* Extensions.swift */,
+				88FFCD6A254A195B00F96586 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88FFCD67254A193E00F96586 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88FFCD68254A194200F96586 /* New Group2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		88FFCD69254A195100F96586 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88FFCD6A254A195B00F96586 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				885208B02548CE20005FFEA0 /* SelectTimerViewController.swift */,
+				88FFCD62254A192F00F96586 /* TimerViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +178,6 @@
 			files = (
 				885208B92548CE22005FFEA0 /* LaunchScreen.storyboard in Resources */,
 				885208B62548CE22005FFEA0 /* Assets.xcassets in Resources */,
-				885208B42548CE20005FFEA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				885208B12548CE20005FFEA0 /* ViewController.swift in Sources */,
+				88FFCD74254A1A9300F96586 /* PropertyWrappers.swift in Sources */,
+				88FFCD71254A198100F96586 /* TimerView.swift in Sources */,
+				88FFCD63254A192F00F96586 /* TimerViewController.swift in Sources */,
+				88FFCD77254A1B0200F96586 /* Extensions.swift in Sources */,
+				885208B12548CE20005FFEA0 /* SelectTimerViewController.swift in Sources */,
 				885208AD2548CE20005FFEA0 /* AppDelegate.swift in Sources */,
+				88FFCD6C254A197800F96586 /* SelectTimerView.swift in Sources */,
 				885208AF2548CE20005FFEA0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +202,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		885208B22548CE20005FFEA0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				885208B32548CE20005FFEA0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		885208B72548CE22005FFEA0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
