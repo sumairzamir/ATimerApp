@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88020A17254B2B8E00B49DDF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88020A16254B2B8E00B49DDF /* Constants.swift */; };
 		885208AD2548CE20005FFEA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885208AC2548CE20005FFEA0 /* AppDelegate.swift */; };
 		885208AF2548CE20005FFEA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885208AE2548CE20005FFEA0 /* SceneDelegate.swift */; };
 		885208B12548CE20005FFEA0 /* SelectTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885208B02548CE20005FFEA0 /* SelectTimerViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88020A16254B2B8E00B49DDF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		885208A92548CE20005FFEA0 /* ATimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885208AC2548CE20005FFEA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		885208AE2548CE20005FFEA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88020A19254B2C9000B49DDF /* Extensions+Constants */ = {
+			isa = PBXGroup;
+			children = (
+				88FFCD76254A1B0200F96586 /* Extensions.swift */,
+				88020A16254B2B8E00B49DDF /* Constants.swift */,
+			);
+			path = "Extensions+Constants";
+			sourceTree = "<group>";
+		};
 		885208A02548CE20005FFEA0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +94,7 @@
 				88FFCD6B254A197800F96586 /* SelectTimerView.swift */,
 				88FFCD70254A198100F96586 /* TimerView.swift */,
 				88FFCD73254A1A9300F96586 /* PropertyWrappers.swift */,
-				88FFCD76254A1B0200F96586 /* Extensions.swift */,
+				88020A19254B2C9000B49DDF /* Extensions+Constants */,
 				88FFCD6A254A195B00F96586 /* ViewController */,
 			);
 			path = View;
@@ -196,6 +207,7 @@
 				885208AD2548CE20005FFEA0 /* AppDelegate.swift in Sources */,
 				88FFCD6C254A197800F96586 /* SelectTimerView.swift in Sources */,
 				885208AF2548CE20005FFEA0 /* SceneDelegate.swift in Sources */,
+				88020A17254B2B8E00B49DDF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

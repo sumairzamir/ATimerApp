@@ -49,17 +49,17 @@ class SelectTimerView: UIView {
         rightButton.tintColor = UIColor.white.withAlphaComponent(0.5)
         timerTitle.font = UIFont.boldSystemFont(ofSize: 13)
         timerSelect.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
-        timerSelect.layer.cornerRadius = 10
+        timerSelect.layer.cornerRadius = Constants.cornerRadius.value
         
         NSLayoutConstraint.activate([
             timerTitle.centerXAnchor.constraint(equalTo: centerXAnchor),
             timerTitle.centerYAnchor.constraint(equalTo: centerYAnchor),
             timerStackView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 4/5),
-            timerStackView.topAnchor.constraint(equalTo: timerTitle.bottomAnchor, constant: 15),
+            timerStackView.topAnchor.constraint(equalTo: timerTitle.bottomAnchor, constant: Constants.largeSpacing.value),
             timerStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
             leftButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1/5),
             rightButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1/5),
-            timerSelect.topAnchor.constraint(equalTo: timerStackView.bottomAnchor, constant: 10),
+            timerSelect.topAnchor.constraint(equalTo: timerStackView.bottomAnchor, constant: Constants.defaultSpacing.value),
             timerSelect.centerXAnchor.constraint(equalTo: centerXAnchor),
             timerSelect.widthAnchor.constraint(equalTo: timerStackView.widthAnchor, multiplier: 3/5)
         ])
