@@ -54,3 +54,20 @@ struct ButtonAttributes {
     }
     
 }
+
+@propertyWrapper
+struct TextViewAttributes {
+    
+    var wrappedValue: UITextView
+    
+    init(text: String?, backgroundColor: UIColor?) {
+        wrappedValue = UITextView()
+        wrappedValue.text = text
+        wrappedValue.backgroundColor = backgroundColor
+        wrappedValue.textAlignment = .center
+        wrappedValue.isScrollEnabled = false
+        wrappedValue.textContainer.maximumNumberOfLines = 1
+        wrappedValue.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+}

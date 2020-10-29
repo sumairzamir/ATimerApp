@@ -31,8 +31,8 @@ class SelectTimerView: UIView {
     @ButtonAttributes(image: UIImage(systemName: "arrowtriangle.right.fill"), title: nil, backgroundColor: nil)
     var rightButton: UIButton
     
-    @LabelAttributes(text: "0", alignment: .center, textColor: .label)
-    var timerCount: UILabel
+    @TextViewAttributes(text: "0", backgroundColor: nil)
+    var timerCount: UITextView
     
     @ButtonAttributes(image: nil, title: "Ok", backgroundColor: UIColor.white.withAlphaComponent(0.75))
     var timerSelect: UIButton
@@ -47,16 +47,19 @@ class SelectTimerView: UIView {
         
         leftButton.tintColor = UIColor.white.withAlphaComponent(0.5)
         rightButton.tintColor = UIColor.white.withAlphaComponent(0.5)
-        timerTitle.font = UIFont.boldSystemFont(ofSize: 13)
-        timerSelect.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
+        timerTitle.font = UIFont.boldSystemFont(ofSize: 24)
+        timerCount.font = UIFont.systemFont(ofSize: 50)
+        timerCount.textAlignment = .center
+        timerSelect.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         timerSelect.layer.cornerRadius = Constants.cornerRadius.value
         
         NSLayoutConstraint.activate([
-            timerTitle.centerXAnchor.constraint(equalTo: centerXAnchor),
-            timerTitle.centerYAnchor.constraint(equalTo: centerYAnchor),
             timerStackView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 4/5),
-            timerStackView.topAnchor.constraint(equalTo: timerTitle.bottomAnchor, constant: Constants.largeSpacing.value),
+            timerStackView.centerYAnchor.constraint(equalTo: centerYAnchor),
             timerStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            timerStackView.heightAnchor.constraint(equalToConstant: 75),
+            timerTitle.centerXAnchor.constraint(equalTo: centerXAnchor),
+            timerTitle.bottomAnchor.constraint(equalTo: timerStackView.topAnchor, constant: -Constants.defaultSpacing.value),
             leftButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1/5),
             rightButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1/5),
             timerSelect.topAnchor.constraint(equalTo: timerStackView.bottomAnchor, constant: Constants.defaultSpacing.value),
