@@ -17,12 +17,18 @@ class SelectTimerViewController: UIViewController {
         timerSelectTapEvent()
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return [.portrait, .portraitUpsideDown]
+    }
+    
     func timerSelectTapEvent() {
         selectTimerView.timerSelect.addTarget(self, action: #selector(timerSelectTapped), for: .touchUpInside)
     }
     
     @objc func timerSelectTapped() {
-        present(TimerViewController(), animated: true) {
+        let timerViewController = TimerViewController()
+        timerViewController.modalPresentationStyle = .fullScreen
+        present(timerViewController, animated: true) {
             print("Timer select tapped")
         }
     }

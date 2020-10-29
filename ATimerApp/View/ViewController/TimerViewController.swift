@@ -17,6 +17,10 @@ class TimerViewController: UIViewController {
         closeTimerViewEvent()
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
+    
     func closeTimerViewEvent() {
         timerView.closeTimerView.addTarget(self, action: #selector(closeTimerViewTapped), for: .touchUpInside)
     }

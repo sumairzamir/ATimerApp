@@ -19,17 +19,24 @@ class TimerView: UIView {
         setupTimerView()
     }
     
+    @LabelAttributes(text: "0", alignment: .center, textColor: .label)
+    var timerLabel: UILabel
+    
     @ButtonAttributes(image: UIImage(systemName: "xmark"), title: nil, backgroundColor: nil)
     var closeTimerView: UIButton
     
     func setupTimerView() {
         backgroundColor = .systemTeal
         
-        addSubview(closeTimerView)
+        timerLabel.font = UIFont.boldSystemFont(ofSize: 100)
+        
+        addMultipleSubviews([timerLabel, closeTimerView])
         
         NSLayoutConstraint.activate([
-            closeTimerView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            closeTimerView.centerYAnchor.constraint(equalTo: centerYAnchor)
+            timerLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            timerLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            closeTimerView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
+            closeTimerView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -10)
         ])
     }
     
