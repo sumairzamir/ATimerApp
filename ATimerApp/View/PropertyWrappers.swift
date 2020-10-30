@@ -58,15 +58,13 @@ struct ButtonAttributes {
 @propertyWrapper
 struct TextViewAttributes {
     
-    var wrappedValue: UITextView
+    var wrappedValue: UITextField
     
     init(text: String?, backgroundColor: UIColor?) {
-        wrappedValue = UITextView()
+        wrappedValue = UITextField()
         wrappedValue.text = text
         wrappedValue.backgroundColor = backgroundColor
         wrappedValue.textAlignment = .center
-        wrappedValue.isScrollEnabled = false
-        wrappedValue.textContainer.maximumNumberOfLines = 1
         wrappedValue.translatesAutoresizingMaskIntoConstraints = false
     }
     

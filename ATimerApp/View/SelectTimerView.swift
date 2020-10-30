@@ -31,8 +31,8 @@ class SelectTimerView: UIView {
     @ButtonAttributes(image: UIImage(systemName: "arrowtriangle.right.fill"), title: nil, backgroundColor: nil)
     var rightButton: UIButton
     
-    @TextViewAttributes(text: "0", backgroundColor: nil)
-    var timerCount: UITextView
+    @TextViewAttributes(text: nil, backgroundColor: nil)
+    var timerCount: UITextField
     
     @ButtonAttributes(image: nil, title: "Ok", backgroundColor: UIColor.white.withAlphaComponent(0.75))
     var timerSelect: UIButton
@@ -44,6 +44,7 @@ class SelectTimerView: UIView {
         addMultipleSubviews([timerTitle, timerStackView, timerSelect])
         
         timerStackView.addMultipleArrangedSubviews([leftButton, timerCount, rightButton])
+        timerCount.placeholder = "0:00"
         
         leftButton.tintColor = UIColor.white.withAlphaComponent(0.5)
         rightButton.tintColor = UIColor.white.withAlphaComponent(0.5)
