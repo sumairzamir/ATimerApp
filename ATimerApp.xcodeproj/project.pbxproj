@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88020A17254B2B8E00B49DDF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88020A16254B2B8E00B49DDF /* Constants.swift */; };
+		884C92242557316A00AC6B7C /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C92232557316A00AC6B7C /* TimerViewModel.swift */; };
 		885208AD2548CE20005FFEA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885208AC2548CE20005FFEA0 /* AppDelegate.swift */; };
 		885208AF2548CE20005FFEA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885208AE2548CE20005FFEA0 /* SceneDelegate.swift */; };
 		885208B12548CE20005FFEA0 /* SelectTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885208B02548CE20005FFEA0 /* SelectTimerViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		88020A16254B2B8E00B49DDF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		884C92232557316A00AC6B7C /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		885208A92548CE20005FFEA0 /* ATimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885208AC2548CE20005FFEA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		885208AE2548CE20005FFEA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +83,6 @@
 				88FFCD66254A193C00F96586 /* View */,
 				88FFCD67254A193E00F96586 /* ViewModel */,
 				885208B52548CE22005FFEA0 /* Assets.xcassets */,
-				88FFCD68254A194200F96586 /* New Group2 */,
 				885208B72548CE22005FFEA0 /* LaunchScreen.storyboard */,
 				885208BA2548CE22005FFEA0 /* Info.plist */,
 			);
@@ -103,15 +104,9 @@
 		88FFCD67254A193E00F96586 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				884C92232557316A00AC6B7C /* TimerViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		88FFCD68254A194200F96586 /* New Group2 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group2";
 			sourceTree = "<group>";
 		};
 		88FFCD69254A195100F96586 /* Model */ = {
@@ -199,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884C92242557316A00AC6B7C /* TimerViewModel.swift in Sources */,
 				88FFCD74254A1A9300F96586 /* PropertyWrappers.swift in Sources */,
 				88FFCD71254A198100F96586 /* TimerView.swift in Sources */,
 				88FFCD63254A192F00F96586 /* TimerViewController.swift in Sources */,

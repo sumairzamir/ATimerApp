@@ -10,12 +10,11 @@ import UIKit
 class SelectTimerViewController: UIViewController {
     
     let selectTimerView = SelectTimerView()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view = selectTimerView
         timerSelectTapEvent()
-        configureUI()
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -32,10 +31,6 @@ class SelectTimerViewController: UIViewController {
         present(timerViewController, animated: true) {
             print("Timer select tapped")
         }
-    }
-    
-    func configureUI() {
-        selectTimerView.timerCount.keyboardType = UIKeyboardType.numberPad
     }
     
 }

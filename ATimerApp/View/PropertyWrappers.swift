@@ -56,7 +56,7 @@ struct ButtonAttributes {
 }
 
 @propertyWrapper
-struct TextViewAttributes {
+struct TextFieldAttributes {
     
     var wrappedValue: UITextField
     
