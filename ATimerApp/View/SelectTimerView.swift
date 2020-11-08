@@ -66,6 +66,7 @@ class SelectTimerView: UIView, UITextFieldDelegate {
         timerSelect.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         timerSelect.layer.cornerRadius = Constants.cornerRadius.value
         timerMinutesInput.delegate = self
+        timerSecondsInput.delegate = self
         
         NSLayoutConstraint.activate([
             timerStackView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 4/5),
@@ -85,11 +86,26 @@ class SelectTimerView: UIView, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let minuteMaxLength = 1
-        let minuteEntry = timerMinutesInput.text ?? ""
-        guard let stringRangeMinutes = Range(range, in: minuteEntry) else { return false }
-        let enteredMinutes = minuteEntry.replacingCharacters(in: stringRangeMinutes, with: string)
-        return enteredMinutes.count <= minuteMaxLength
+        
+        switch textField {
+        case timerMinutesInput:
+            let minuteMaxLength = 1
+            let minuteEntry = timerMinutesInput.text ?? ""
+            guard let stringRangeMinutes = Range(range, in: minuteEntry) else { return false }
+            let enteredMinutes = minuteEntry.replacingCharacters(in: stringRangeMinutes, with: string)
+            return enteredMinutes.count <= minuteMaxLength
+            
+        case timerSecondsInput:
+            let secondMaxLength = 2
+            let secondEntry = timerSecondsInput.text ?? ""
+            guard let stringRangeSeconds = Range(range, in: secondEntry) else { return false }
+            let enteredSeconds = secondEntry.replacingCharacters(in: stringRangeSeconds, with: string)
+            return enteredSeconds.count <= secondMaxLength
+            
+        default:
+            return false
+        }
+        
     }
     
 }
